@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Mall</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #eef4fa;
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 25%;
+      background: pink;
+      color: white;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    select {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .content img {
+      width: 320px;
+      height: 220px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      object-fit: cover;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      color: purple;
+      margin-bottom: 10px;
+    }
+
+    .shortText {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      max-width: 600px;
+      background: rgb(205, 164, 243);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Food Mall</h2>
+    <select id="travelSelect">
+      <option value="">-- Select a Category --</option>
+      <option value="Southindian">Southindian</option>
+      <option value="Northindian">Northindian</option>
+      <option value="Maharashtrian">Maharashtrian</option>
+      <option value="Punjabi">Punjabi</option>
+      <option value="Gujrati">Gujrati</option>
+      <option value="Rajasthani">Rajasthani</option>
+      <option value="Bengali">Bengali</option>
+      <option value="Sweetdesert">Sweetdesert</option>
+      <option value="SpicyFood">Spicy Food</option>
+      <option value="NonVeg">NonVeg</option>
+    </select>
+  </div>
+
+  <div class="content">
+    <img id="travelImage" src="https://images.picxy.com/cache/2020/11/24/bfbf1acd26e67aa7d1b0e0fb83b329e3.jpg" alt="Travel Image">
+    <div class="title" id="travelTitle">Welcome to Food Mall</div>
+    <div class="shortText" id="shortText">Select a category to taste different food items.</div>
+    <div class="description" id="description">“Crafted with fresh ingredients and bold flavors, our dishes bring comfort, warmth, and a memorable taste experience to every plate.”</div>
+  </div>
+
+  <script src="task.js"></script>
+</body>
+</html>
